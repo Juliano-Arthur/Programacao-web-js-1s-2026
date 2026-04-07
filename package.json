@@ -1,20 +1,16 @@
 {
-  "name": "programacao-web-js-1s-2026",
+  "name": "atividade3",
   "version": "1.0.0",
-  "description": "Repositório de código da disciplina programação web com JS",
-  "main": "ola_mundo.js",
+  "description": "",
+  "main": "api.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Juliano-Arthur/Programacao-web-js-1s-2026.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Juliano-Arthur/Programacao-web-js-1s-2026/issues"
-  },
-  "homepage": "https://github.com/Juliano-Arthur/Programacao-web-js-1s-2026#readme"
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
 }
