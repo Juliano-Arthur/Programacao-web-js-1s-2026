@@ -6,17 +6,17 @@ const PORT = 3000;
 // "banco de dados" em memória
 let arrResponse = [];
 
-// 🏠 Rota inicial
+// Rota inicial
 app.get("/", (req, res) => {
   res.send("Servidor funcionando!");
 });
 
-// 📋 LISTAR
+//  LISTAR
 app.get("/listar", (req, res) => {
   res.json(arrResponse);
 });
 
-// ➕ ADICIONAR
+//  ADICIONAR
 app.get("/adicionar/:id/:nome/:qtd", (req, res) => {
   const { id, nome, qtd } = req.params;
 
@@ -37,7 +37,7 @@ app.get("/adicionar/:id/:nome/:qtd", (req, res) => {
   res.send("Item adicionado com sucesso!");
 });
 
-// ❌ REMOVER
+//  REMOVER
 app.get("/remover/:id", (req, res) => {
   const id = Number(req.params.id);
 
@@ -52,7 +52,7 @@ app.get("/remover/:id", (req, res) => {
   res.send("Item removido com sucesso");
 });
 
-// ✏️ EDITAR QUANTIDADE
+//  EDITAR QUANTIDADE
 app.get("/editar/:id/:qtd", (req, res) => {
   const { id, qtd } = req.params;
 
@@ -67,7 +67,7 @@ app.get("/editar/:id/:qtd", (req, res) => {
   res.send("Quantidade atualizada com sucesso");
 });
 
-// 🚀 SERVIDOR
+//  SERVIDOR
 app.listen(PORT, () => {
   console.log(`O servidor está rodando na porta ${PORT}`);
 });
